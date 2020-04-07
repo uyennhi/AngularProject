@@ -1,0 +1,13 @@
+.movies {
+    background-color: blue;
+    padding: 0.5em 1em 0.5em 1.5em;
+    margin: 1em;
+    max-width: 16em;
+
+}
+.movies .movieListItem {
+    font-size: 0.875em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: white;
+    padding: 1em;
+}

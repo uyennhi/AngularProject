@@ -4,3 +4,21 @@
     <p>{{movie.name | uppercase}}</p>
     <p>{{movie.releaseYear}}</p>
 </div>
+<div style="margin:10px; text-align: left;">
+    <label aria-placeholder="type message">Name data-biding one way
+        <input [ngModel]="movie.name" placeholder="Enter your name">
+    </label>
+</div>
+
+<div style="margin:10px; text-align: left;">
+    <label aria-placeholder="type message">Name Data-binding two- way
+        <input [(ngModel)]="movie.releaseYear" placeholder="Enter your name">
+    </label>
+</div>
+
+<h1>My favorite movies</h1>
+<ol class="movies">
+    <li class="movieListItem" *ngFor="let eachello of movies">
+        {{eachello.name}}
+    </li>
+</ol>
