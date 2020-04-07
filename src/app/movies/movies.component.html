@@ -18,7 +18,8 @@
 
 <h1>My favorite movies</h1>
 <ol class="movies">
-    <li class="movieListItem" *ngFor="let eachello of movies">
+    <li class="movieListItem" *ngFor="let eachello of movies" [class.selected]="eachello == selectedMovie" (click)="onSelect(eachello)">
+        
         {{eachello.name}}
     </li>
 </ol>
